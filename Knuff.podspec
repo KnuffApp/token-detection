@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.author             = { "Bowtie" => "howdy@madebybowtie.com" }
   s.social_media_url   = "http://twitter.com/madebybowtie"
   
-	s.platform     = :ios, "7.0"
+  s.ios.deployment_target = '7.0'
+  s.tvos.deployment_target = '10.0'
 
   s.source       = { :git => "https://github.com/KnuffApp/Knuff-Framework.git", :tag => "1.0" }
   s.source_files  = "Knuff/*.m"
